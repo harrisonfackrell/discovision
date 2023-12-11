@@ -1,0 +1,306 @@
+:root {
+    --mouse-x: 0.5;
+    --mouse-y: 0.5;
+}
+
+body {
+    margin: 0px;
+}
+#main {
+    display: flex;
+    flex-flow: row nowrap;
+    height: calc(100vh - 60px);
+    background-image: url("./img/parallax/feld.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;
+    min-width: 1200px;
+    min-height: 800px;
+}
+#skill-details {
+    padding: 20px;
+    flex-grow: 0.3;
+    transition: all 0.25s;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: white;
+    width: 30%;
+    overflow-x: hidden;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#skill-details > .nav-bar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    height: 50px;
+    transition: all 0.25s;
+}
+#skill-details.closed > .nav-bar {
+    height: 0px;
+}
+#skill-details.closed {
+    flex-grow: 0;
+    padding: 0px;
+    width: 0%;
+}
+#skill-details.closed > * {
+    width: 400px;
+}
+#overview-toggle, #info-toggle {
+    opacity: 0.6;
+    font-size: xx-large;
+    color: white;
+    background-color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    text-align: center;
+    flex-grow: 1;
+    line-height: 75%;
+}
+
+#overview.active, #info.active {
+    display: block;
+}
+#overview, #info {
+    display: none;
+}
+#skill-detail-image {
+    width: 100%;
+    height: 500px;
+}
+#skill-details .closer {
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+}
+#skill-details .nav-bar > .active {
+    color: black;
+    background-color: white;
+    transition: none;
+}
+#skill-details .nav-bar > :not(.active) {
+    transition: background-color 0.3s;
+}
+#skill-details .nav-bar > :hover {
+    cursor: pointer;
+}
+#skill-details .nav-bar > :not(.active):hover {
+    background-color: gray;
+}
+#skill-detail-desc-long {
+    overflow-y: scroll;
+}
+#view-checks-button {
+    background-color: darkorange;
+    padding: 10px;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+}
+#level-up-button {
+    background-color: cornflowerblue;
+    padding: 10px;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+}
+#skills {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    flex-grow: 0.6;
+    width: 70%;
+    justify-content: space-between;
+}
+#skills > div {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+}
+.skill {
+    width: 150px;
+    height: 100%;
+    transition: all 0.25s;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.skill:hover {
+    cursor: pointer;
+    
+}
+.skill > img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.skill > p {
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+    max-height: 0px;
+    background-color: white;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    opacity: 1;
+    transition: all 0.25s;
+    text-align: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    overflow: hidden;
+    word-break: keep-all;
+    font-size: 90%;
+}
+.skill:hover > p {
+    max-height: 40px;
+    font-size: small;
+    word-break: normal;
+}
+
+.parallax-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: -2;
+    overflow: hidden;
+}
+.fog {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    pointer-events: none;
+}   
+
+.parallax-layer {
+    position: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#layer1 {
+    background-image: url('img/parallax/t1.png');
+    height: 110%;
+    width: 110%;
+    transform: translateX(calc(var(--mouse-x) * -5%)) translateY(calc(var(--mouse-y) * -5%));
+    z-index: -1
+}
+
+#layer2 {
+    background-image: url('img/parallax/t3.png');
+    height: 100%;
+    width: 200%;
+    animation: parallax2 7s ease-in-out infinite alternate reverse;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+#layer3 {
+    height: 100%;
+    width: 300%;
+    background-image: url('img/parallax/t2.png');
+    animation: parallax3 10s ease-in-out infinite alternate;
+    opacity: 0.5;
+}
+
+#check-menu {
+    width: 80%;
+    left: 10%;
+    height: 0vh;
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+    background-color: black;
+    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    transition: all 0.25s;
+    overflow-y: hidden;
+    opacity: 0.9;
+}
+#check-menu .closer {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    opacity: 0.6;
+}
+#check-menu .closer:hover {
+    cursor: pointer;
+}
+#check-menu.active {
+    height: 100vh;
+    overflow-y: scroll;
+}
+#check-list {
+    width: calc(100% - 55px);
+    height: 100%;
+    margin: 0;
+}
+#journal {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#skill-name {
+    width: 80%;
+}
+#skill-level {
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 525px;
+    right: 0px;
+    max-width: 40px;
+}
+
+@keyframes parallax2 {
+    0% {
+        transform: translateX(-10%);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-40%);
+    }
+}
+
+@keyframes parallax3 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

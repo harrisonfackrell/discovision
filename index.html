@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="skills.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>DiscoVision</title>
+</head>
+<body>
+    <div id="main">
+        <div id="skills">
+            <div id="int"></div>
+            <div id="psy"></div>
+            <div id="fys"></div>
+            <div id="mot"></div>
+        </div>
+        <div id="skill-details" class="closed">
+            <div class="nav-bar">
+                <p id="overview-toggle" class="active">Overview</p>
+                <p id="info-toggle">Info</p>
+                <img class="closer" src="img/x.webp">
+            </div>
+            <img id="skill-detail-image">
+            <h1 id="skill-name"></h1>
+            <h1 id="skill-level"></h1>
+            <div id="overview" class="active">
+                <p id="skill-detail-desc-short"></p>
+                <p id="view-checks-button">VIEW SKILL JOURNAL</p>
+                <p id="level-up-button">LEVEL UP</p>
+            </div>
+            <div id="info">
+                <p id="skill-detail-cool-for"></p>
+                <p id="skill-detail-desc-long"></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="parallax-container">
+        <div class="parallax-layer" id="layer1"></div>
+        
+    </div>
+    <div class="fog">
+        <div class="parallax-layer" id="layer2"></div>
+        <div class="parallax-layer" id="layer3"></div>
+    </div>
+
+    <div id="check-menu">
+        <img class="closer" src="img/x.webp">
+        <div id="check-list">
+            <p id="journal" contenteditable="true"></p>
+        </div>
+    </div>
+</body>
+</html>
