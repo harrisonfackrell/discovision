@@ -13,10 +13,10 @@
     <div id="viewport">
         <div id="content">
             <div id="attributes">
-                <div class="attribute"><p>3</p><p class="modal"><span class="int-color">Intellect</span> is your cognitive-dispassionate attribute. Individuals with high <span class="int-color">Intellect</span> engage the world as a series of mechanics, to be understood and engineered.</p><p>INTELLECT</p></div>
-                <div class="attribute"><p>3</p><p class="modal"><span class="psy-color">Psyche</span> is your cognitive-passionate attribute. Individuals with high <span class="psy-color">Psyche</span> engage the world with their emotions, relying on intuition and imagination.</p><p>PSYCHE</p></div>
-                <div class="attribute"><p>3</p><p class="modal"><span class="fys-color">Physique</span> is your material-passionate attribute. Individuals with high <span class="fys-color">Physique</span> engage the world as a stage for physiological experience and performance.</p><p>PHYSIQUE</p></div>
-                <div class="attribute"><p>3</p><p class="modal"><span class="mot-color">Motorics</span> is your material-dispassionate attribute. Individuals with high <span class="mot-color">Motorics</span> engage the world in terms of its physical processes and qualities.</p><p>MOTORICS</p></div>
+                <div class="attribute"><p><span>▼</span>3<span>▲</span></p><p class="modal"><span class="int-color">Intellect</span> is your cognitive-dispassionate attribute. Individuals with high <span class="int-color">Intellect</span> engage the world as a series of mechanics, to be understood and engineered.</p><p>INTELLECT</p></div>
+                <div class="attribute"><p><span>▼</span>3<span>▲</span></p><p class="modal"><span class="psy-color">Psyche</span> is your cognitive-passionate attribute. Individuals with high <span class="psy-color">Psyche</span> engage the world with their emotions, relying on intuition and imagination.</p><p>PSYCHE</p></div>
+                <div class="attribute"><p><span>▼</span>3<span>▲</span></p><p class="modal"><span class="fys-color">Physique</span> is your material-passionate attribute. Individuals with high <span class="fys-color">Physique</span> engage the world as a stage for physiological experience and performance.</p><p>PHYSIQUE</p></div>
+                <div class="attribute"><p><span>▼</span>3<span>▲</span></p><p class="modal"><span class="mot-color">Motorics</span> is your material-dispassionate attribute. Individuals with high <span class="mot-color">Motorics</span> engage the world in terms of its physical processes and qualities.</p><p>MOTORICS</p></div>
             </div>
             <div id="skills">
                 <div id="int"></div>
@@ -36,8 +36,11 @@
                 <h1 id="skill-level"></h1>
                 <div id="overview" class="active">
                     <p id="skill-detail-desc-short"></p>
-                    <p id="view-checks-button">VIEW SKILL JOURNAL</p>
-                    <p id="level-up-button">LEVEL UP</p>
+                    <div style="display: flex; flex-flow: row nowrap; gap: 10px;">
+                        <p id="view-checks-button">VIEW SKILL JOURNAL</p>
+                        <p id="level-down-button">DECREASE SKILL LEVEL</p>
+                        <p id="level-up-button">INCREASE SKILL LEVEL</p>
+                    </div>
                 </div>
                 <div id="info">
                     <p id="skill-detail-cool-for"></p>

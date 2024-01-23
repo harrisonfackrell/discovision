@@ -93,11 +93,36 @@ body {
     color: white;
     font-family: 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    
 }
 .attribute > p:first-child {
     font-size: 5vw; 
     font-weight: 800;
     line-height: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.attribute > p:first-child > span {
+    opacity: 0;
+    font-size: 2vw;
+    transition: opacity 0.25s, transform 0.25s;
+    display: block;
+}
+.attribute > p:first-child > span:first-child {
+    transform: translateY(-20px);
+}
+.attribute > p:first-child > span:last-child {
+    transform: translateY(20px);
+}
+.attribute:hover > p:first-child > span {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.attribute > p:first-child > span:hover {
+    cursor: pointer;
 }
 .attribute > p:last-child {
     font-style: italic;
@@ -129,6 +154,7 @@ body {
     height: 0px;
     transition: all 0.25s;
     overflow: hidden;
+    user-select: none;
 }
 #skill-details:hover > .nav-bar {
     height: 50px;
@@ -200,13 +226,14 @@ body {
     text-align: center;
     cursor: pointer;
 }
-#level-up-button {
+#level-up-button, #level-down-button {
     background-color: cornflowerblue;
     padding: 10px;
     font-weight: bold;
     width: 120px;
     text-align: center;
     cursor: pointer;
+    user-select: none;
 }
 #skills {
     display: flex;

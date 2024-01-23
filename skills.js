@@ -149,7 +149,7 @@ skills = {
             "img": "half_light.webp",
             "cool_for": "The High-Strung, Shoot-Now-Ask-Questions-Later Cops, Surprise Haters.",
             "desc_short": "Let the body take control. Threaten people.",
-            "desc_long": "Half Light is your fight-or-flight response. It enables you to sense the way situations are about to turn. It injects palpable fear into your heart – fear that urges you act before it’s too late to act ever again; fear that makes you frighten others. It is the aggression that lets you squeeze every last drop of information out of a witness.<br><br>At high levels, Half Light makes you ultra-attuned to the world. It is perpetual fear – of your own shadow, of someone else’s name or scent. You’ll be ready, always, to pounce and physically interrogate passersby. At low levels, however, you’ll find your survival instinct is lacking. And your methods are limp-wristed. Those who respect violence will not respect you."
+            "desc_long": "Half Light is your fight-or-flight response. It enables you to sense the way situations are about to turn. It injects palpable fear into your heart – to pounce and physically interrogate passersbyfear that urges you act before it’s too late to act ever again; fear that makes you frighten others. It is the aggression that lets you squeeze every last drop of information out of a witness.<br><br>At high levels, Half Light makes you ultra-attuned to the world. It is perpetual fear – of your own shadow, of someone else’s name or scent. You’ll be ready, always, to pounce, whether you do so away from the danger, or as its harbinger. At low levels, however, you’ll find your survival instinct is lacking. And your methods are limp-wristed. Those who respect violence will not respect you."
         },
         
         // "somatic_integration": {
@@ -161,7 +161,7 @@ skills = {
         // },
         "volta_do_mar": {
             "name": "Volta do Mar",
-            "img": "volta_do_mar_2.webp",
+            "img": "volta_do_mar.webp",
             "cool_for": "Paledrivers, Aerostatic Pilots, Genuinely Smooth Operators.",
             "desc_short": "Step back to the shore. Keep yourself grounded and moving.",
             "desc_long": "Volta do Mar is the flow of your breath, steady amid turmoils extrinsic and internal. It's the subtle shift that allows you to move with the wind, without compromising your stance; it's the melody that keeps you on-pace and unafraid, in the first hour well as the eleventh. When the intensity rises, Volta do Mar enables you to acknowledge and embrace it – and to let it go.<br><br>At high levels, you'll be detatched and disengaged, lost in your ritual and unwilling to divert; but at low levels, you'll be myopically neurotic, battered by the tides and unable to tread."
@@ -222,7 +222,7 @@ skills = {
             "img": "kinetic_dressage.webp",
             "cool_for": "Acrobats, Mountees, Waveriders.",
             "desc_short": "Don't blink. Don't think. Just go.",
-            "desc_long": "Kinetic Dressage represents your unconscious physical aptitude, and it enables you to offload rote motions from your cerebrum onto your sympathetic nervous system. It's the intrinsic assurance that allows you to step with confidence, play a chord, and expertly wield chopsticks, without so much as a passing thought.<br><br>At high levels, you will be equipped with an abstracted subroutine for everything – and surprised when you're not. At low levels, however, you'll have trouble achieving any kind of flow state, and you'll be overwhelmed by the sheer number of mechanical processes your body needs to accomplish."
+            "desc_long": "Kinetic Dressage represents your unconscious physical aptitude, and it enables you to offload rote motions from your cerebrum onto your sympathetic nervous system. It's the intrinsic assurance that allows you to step with confidence, play a chord, and expertly wield chopsticks, without so much as a passing thought.<br><br>At high levels, you will be equipped with an abstracted subroutine for everything – and surprised and disoriented when you're not. At low levels, however, you'll have trouble achieving any kind of flow state, and you'll be overwhelmed by the sheer number of mechanical processes your body needs to accomplish."
         }
     }
 }
