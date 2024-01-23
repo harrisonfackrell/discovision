@@ -35,6 +35,7 @@ function load_details(skill) {
         localStorage.setItem(skill.name + "level", level.toString())
         document.querySelector("#skill-level").innerText = level.toString()
     }
+    document.documentElement.style.setProperty('--content-scroll', 1);
 }
 function inflate_check_list(check_list) {
     str = ""
@@ -46,13 +47,15 @@ function inflate_check_list(check_list) {
 window.addEventListener('mousemove', (e) => {
     document.documentElement.style.setProperty('--mouse-x', e.pageX / window.innerWidth);
     document.documentElement.style.setProperty('--mouse-y', e.pageY / window.innerHeight);
+    document.documentElement.style.setProperty('--mouse-x-raw', e.pageX);
+    document.documentElement.style.setProperty('--mouse-y-raw', e.pageY);
 });
 Skill = function(skill_json) {
     Object.assign(this, skill_json);
     if (localStorage.getItem(this.name + "level")) {
         this.level = localStorage.getItem(this.name + "level")
     } else {
-        this.level = 0
+        this.level = 1
     }
     this.inflate = () => {
         rep = document.createElement("div")
@@ -60,9 +63,19 @@ Skill = function(skill_json) {
         image = document.createElement("img")
         image.src = "img/skill/" + this.img
         rep.appendChild(image)
+        label = document.createElement("div")
+        label.className = "skill-label"
         title = document.createElement("p")
         title.innerHTML = this.name.toUpperCase()
-        rep.appendChild(title)
+        label.appendChild(title)
+        level_tick = document.createElement("p")
+        level_tick.innerHTML = "&nbsp;" + this.level.toString() + "&nbsp;"
+        label.appendChild(level_tick)
+        rep.appendChild(label)
+        modal = document.createElement("div")
+        modal.className = "modal"
+        modal.innerText = this.desc_short
+        rep.appendChild(modal)
         rep.onclick = () => load_details(skill_json)
         return rep
     }
@@ -81,7 +94,8 @@ for (var i = 0; i < Object.values(skills.motorics).length; i++) {
     document.getElementById("mot").appendChild(Skill(Object.values(skills.motorics)[i]).inflate())
 }
 document.querySelector("#skill-details .closer").onclick = () => {
-    document.getElementById("skill-details").className = "closed"
+    // document.getElementById("skill-details").className = "closed"
+    document.documentElement.style.setProperty('--content-scroll', 0);
 }
 document.querySelector("#overview-toggle").onclick = () => {
     document.querySelector("#overview-toggle").className = "active"

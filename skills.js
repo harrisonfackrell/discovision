@@ -26,7 +26,7 @@ skills = {
             "img": "drama.webp",
             "cool_for": "Undercover Cops, Thespians of the Stage, Psychopaths.",
             "desc_short": "Play the actor. Lie and detect lies.",
-            "desc_long": "Drama urges you to treat the world as a stage – and on it, to perform. It will enable you to lie, to concoct the most elaborate and wonderful stories; to take on ingenious personas and perform acts of stagecraft in an entertaining amalgam of fourberie and deceit! As well, it enables you to see through would-be actors and their false antics. If they lie, you’ll know. Immediately.<br><br>At high levels, Drama may render you an insufferable thespian – one prone to hysterics and bouts of paranoia; for to know the world is a stage is to know that Truth is a Vanity. However, with low Drama you cannot lie – or discern when others lie. And a cop who can’t do either is a cop who’s soon going to be lying six feet under. "
+            "desc_long": "Drama urges you to treat the world as a stage – and on it, to perform. It will enable you to lie, to concoct the most elaborate and wonderful stories; to take on ingenious personas and perform acts of stagecraft in an entertaining amalgam of fourberie and deceit! As well, it enables you to see through would-be actors and their false antics. If they lie, you’ll know. Immediately.<br><br>At high levels, Drama may render you an insufferable thespian – one prone to hysterics and bouts of paranoia; for to know the world is a stage is to know that Truth is a Vanity. However, with low Drama you cannot lie – or discern when others lie. And if you can't do either, you'll soon going to be lying six feet under. "
         },
         "conceptualization": {
             "name": "Conceptualization",
@@ -47,12 +47,12 @@ skills = {
             "img": "anatomics.webp",
             "cool_for": "Health Nuts, Gym Rats, Responsible People",
             "desc_short": "Maintain your soma. Understand its optimal function",
-            "desc_long": "Anatomics is the intuitive sense and understanding of your body, as observed by a medical practitioner. It gives you the tools you need to make healthy decisions – or to understand how to mitigate the unhealthy ones. It reports exactly the amount of sleep you need, and dietary intake that best complements your physique.<br><br>At high levels, Anatomics turns your waking day into an intensive regimen of unyielding optimization. At low levels, however, you'll have no means of establishing healthy behaviors."
+            "desc_long": "Anatomics is the intuitive sense and understanding of your body, as observed by a medical practitioner. It gives you the tools you need to make healthy decisions – or to understand how to mitigate the unhealthy ones. It reports exactly the amount of sleep you need, and the dietary intake that best complements your physique.<br><br>At high levels, Anatomics turns your waking day into an intensive regimen of unyielding optimization. At low levels, however, you'll have no means of establishing or understanding healthy behaviors, and your aches, pains, and lethargy will forever remain a mystery."
         },
         "anamnesis": {
             "name": "Anamnesis",
             "img": "anamnesis.webp",
-            "cool_for": "Nostalgics, Scrupulous People.",
+            "cool_for": "Nostalgics, Investigators, Those Who Cannot Let Go.",
             "desc_short": "Recall every detail. Bring the past to life.",
             "desc_long": "Anamnesis allows you to see what you have seen before, and to recall with perfect clarity the minutae of a prior experience. You'll remember exactly the words you spoke, and the shoes you wore, and the sights and smells will bring you back<br><br>At high levels, Anamnesis compels you to abandon the present moment, living with your back turned against the future. However, at low levels, you'll be unable to bring crucial facts to light, and you'll harbor unanswerable questions."
         }
@@ -61,7 +61,7 @@ skills = {
         "volition": {
             "name": "Volition",
             "img": "volition.webp",
-            "cool_for": "Well-Adjusted People, The Non-Suicidal.",
+            "cool_for": "Sane People, Well-Adjusted Conformists, The Non-Suicidal.",
             "desc_short": "Hold yourself together. Keep your Morale up.",
             "desc_long": "Volition urges you to be a good person – to others and to yourself. It enables you to resist temptation: be it in a bottle, between a pair of legs, or at the end of an iron barrel which promises oblivion. Volition gives you the will to finish the task at hand, improving your Morale.<br><br>At high levels, Volition makes you hyper-sane. When you’re about to get funky, it keeps you normal. It’s a bit of a party-pooper. At low levels, however, you’ll have little Morale. Without it, you’ll be profoundly unstable, falling apart at the seams as you make irreversible mistakes."
         },
@@ -70,7 +70,7 @@ skills = {
             "img": "inland_empire.webp",
             "cool_for": "Dreamers, Para-Natural Investigators, Mental Creators.",
             "desc_short": "Hunches and gut feelings. Dreams in waking life.",
-            "desc_long": "Inland Empire is the unfiltered wellspring of imagination, emotion, and foreboding. It enables you to grope your way through invisible dimensions of reality, gaining insight into that which sight can’t see. What’s really going on? What do these enigmatic riddles mean for the world-fate?<br><br>At high levels, Inland Empire animates the inanimate. You’ll have conversations with your clothing, conversations that may change the course of the investigation if you’re not thrown in the loony bin first. With low Inland Empire, however, you’ll be void of imagination – and character. And then how will you shape the cosmos?"
+            "desc_long": "Inland Empire is the unfiltered wellspring of imagination, emotion, and foreboding. It enables you to grope your way through invisible dimensions of reality, gaining insight into that which sight can’t see. What’s really going on? What do these enigmatic riddles mean for the world-fate?<br><br>At high levels, Inland Empire animates the inanimate. You’ll have conversations with your clothing, conversations that may change the course of your destiny if you’re not thrown in the loony bin first. With low Inland Empire, however, you’ll be void of imagination – and character. And then how will you shape the cosmos?"
         },
         "empathy": {
             "name": "Empathy",
@@ -89,9 +89,9 @@ skills = {
         "esprit_de_corps": {
             "name": "Esprit de Corps",
             "img": "esprit_de_corps.webp",
-            "cool_for": "Cops, Cop-Aficionados, Pretend-Cops.",
+            "cool_for": "Extroverts, Social-Aficionados, Pretend-Extroverts.",
             "desc_short": "Connect to your peers. Understand their culture.",
-            "desc_long": "Esprit de Corps is the very spirit of your cultural environment: the zeit-geist. It enables you to understand your blue-souled sisters and brothers – not only by picking up subtle signals from your compatriots, but by witnessing flash-sideways scenes as they play out in your precinct.<br><br>At high levels, you’ll be the very heart of the group: not only willing and able but obliged to take a bullet for your compatriots. However, without Esprit de Corps you’ll be flying blind, unable to understand discreet remarks colleagues make in high-stakes situations; remarks that might just save your life."
+            "desc_long": "Esprit de Corps is the very spirit of your cultural environment: the zeit-geist. It enables you to understand your kindred-souled sisters and brothers – not only by picking up subtle signals from your compatriots, but by witnessing flash-sideways scenes as they play out.<br><br>At high levels, you’ll be the very heart of the group: not only willing and able but obliged to take a bullet for your compatriots. However, without Esprit de Corps you’ll be flying blind, unable to understand discreet remarks colleagues make in high-stakes situations; remarks that might just save your life."
         },
         "suggestion": {
             "name": "Suggestion",
@@ -99,6 +99,13 @@ skills = {
             "cool_for": "Diplomats, Charmers, Sociopaths.",
             "desc_short": "Charm men and women. Play the puppet-master.",
             "desc_long": "Suggestion urges a soft-power approach. If people think they want what you want, you’ve already won. This skill enables you to implant ideas into the minds of others. You can make the citizens like you more. You can make gangsters turn on each other, too; many crime-rings have been broken by just a little doubt, after all.<br><br>At high levels, Suggestion makes you affable to everyone and more resistant to their charms in turn. But all that schmoozing and oozing charm will make you slimy. And you’ll know it, even if no one else does. With low levels of Suggestion, though, you’ll have difficulty getting any kind of rapport with others. You’ll be alone, both during the day and at night."
+        },
+        "behaviorism": {
+            "name": "Behaviorism",
+            "img": "behaviorism.webp",
+            "cool_for": "Hermits, Introverts, Cautious Bet-Hedgers",
+            "desc_short": "Appease your conditioned instincts. Pre-empt the fear.",
+            "desc_long": "Behaviorism is your emotional ego: it wants you to seek out safety, and tells you exactly how any given path will make you feel – along the way, and when it's over. Behaviorism encourages you towards artificial emotional regulation, proscribing all of the thoughts, words, and deeds necessary to shield your unmyelenated nerves from the waking world.<br><br>At high levels, Behaviorism protects you from any agitation – no matter how necessary it may be to face. You'll spend your days as a wirehead of trivial comforts, unwilling to undertake risks. However, with low Behaviorism, you'll be ignorant of the emotional consequences of your actions; and without a light to guide you, you'll sail recklessly into the rocks. You won't see how they'll rend you until it's too late."
         }
     },
     "physique": {
@@ -144,6 +151,7 @@ skills = {
             "desc_short": "Let the body take control. Threaten people.",
             "desc_long": "Half Light is your fight-or-flight response. It enables you to sense the way situations are about to turn. It injects palpable fear into your heart – fear that urges you act before it’s too late to act ever again; fear that makes you frighten others. It is the aggression that lets you squeeze every last drop of information out of a witness.<br><br>At high levels, Half Light makes you ultra-attuned to the world. It is perpetual fear – of your own shadow, of someone else’s name or scent. You’ll be ready, always, to pounce and physically interrogate passersby. At low levels, however, you’ll find your survival instinct is lacking. And your methods are limp-wristed. Those who respect violence will not respect you."
         },
+        
         // "somatic_integration": {
         //     "name": "Somatic Integration",
         //     "img": "somatic_integration.webp",
@@ -153,10 +161,17 @@ skills = {
         // },
         "volta_do_mar": {
             "name": "Volta do Mar",
-            "img": "volta_do_mar.webp",
-            "cool_for": "Paledrivers, Aerostatic Pilots, Genuinely Smooth Operators",
-            "desc_short": "Step back to the shore. Keep yourself grounded and moving",
+            "img": "volta_do_mar_2.webp",
+            "cool_for": "Paledrivers, Aerostatic Pilots, Genuinely Smooth Operators.",
+            "desc_short": "Step back to the shore. Keep yourself grounded and moving.",
             "desc_long": "Volta do Mar is the flow of your breath, steady amid turmoils extrinsic and internal. It's the subtle shift that allows you to move with the wind, without compromising your stance; it's the melody that keeps you on-pace and unafraid, in the first hour well as the eleventh. When the intensity rises, Volta do Mar enables you to acknowledge and embrace it – and to let it go.<br><br>At high levels, you'll be detatched and disengaged, lost in your ritual and unwilling to divert; but at low levels, you'll be myopically neurotic, battered by the tides and unable to tread."
+        },
+        "choleric_hotline": {
+            "name": "Choleric Hotline",
+            "img": "choleric_hotline.webp",
+            "cool_for": "Crisis Counselors, Crisis Bearers, Crisis Instigators.",
+            "desc_short": "Feel the ichor pumping out of you. Drink of the wine of the wrath.",
+            "desc_long": "Choleric Hotline measures your ability to feel – and your disposition to fetishize – the ringing in your ears and the pounding in your skull. It wants you to hurt and be hurt, until you find commisseration in the numbness. You will be unmoved by viscera-and-the-like, once you do, but you will also exist on the edge of consumption.<br><br>At high levels, Choleric Hotline becomes incessant in its urgency, shouting at you to do things you can't take back and showing you imaginations that you can't forget. At low levels, you'll be relieved of this noise – but you'll be unable to recognize the ringing in another person's voice; and without that early warning, who knows what may happen?"
         }
     },
     "motorics": {
@@ -172,13 +187,13 @@ skills = {
             "img": "perception.webp",
             "cool_for": "Fine Detail Detectives, Sensualists, Urban Scavengers",
             "desc_short": "See, hear and smell everything. Let no detail go unnoticed.",
-            "desc_long": "Perception wants you to be open to the world – with eyes, ears, and nose working at full capacity. It enables you to take in what others don’t notice. The little wad of bills hid away in the sugar bowl; the odor of a perp, hiding beneath the floor boards; the gulp of a suspect, after claiming they’ve nothing to hide.<br><br>At high levels, Perception takes in every final detail of the physical world – enough to overwhelm all but the strongest mind. However, with low levels, you are going to miss out on everything. After all, you can’t arrest what you can’t see, hear, or smell."
+            "desc_long": "Perception wants you to be open to the world – with eyes, ears, and nose working at full capacity. It enables you to take in what others don’t notice. The little wad of bills hid away in the sugar bowl; the edge of a shadow, just beyond a threshold; the gulp of a defendant, after claiming they’ve nothing to hide.<br><br>At high levels, Perception takes in every final detail of the physical world – enough to overwhelm all but the strongest mind. However, with low levels, you are going to miss out on everything. After all, you can’t arrest what you can’t see, hear, or smell."
         },
         "reaction_speed": {
             "name": "Reaction Speed",
             "img": "reaction_speed.webp",
             "cool_for": "Shot-Dodgers, Thinkers on their Feet, Pinball-Heads.",
-            "desc_short": "The quickest to react. An untouchable.",
+            "desc_short": "The quickest to react. An untouchable man.",
             "desc_long": "Reaction Speed is the agility of your body and mind. It is instinct. It enables you to dodge punches, knives, bullets. Also suckers punches of the verbal kind. You’ll be more streetwise, never lost for words or lacking a witty comeback. Your mental alacrity lets you connect little details on the fly, working in tandem with your Intellect skills.<br><br>At high levels, Reaction Speed makes your twitch-reflex freakishly good. However, when your body acts before your mind, innocent situations can turn bad fast. You’re high strung, overly alert. At low levels, though, you won’t be the one shooting first – which probably means you won’t be shooting at all. "
         },
         "savoir_faire": {
@@ -186,7 +201,7 @@ skills = {
             "img": "savoir_faire.webp",
             "cool_for": "Acrobats, Thieves, Unbearable Show-Offs.",
             "desc_short": "Sneak under their noses. Stun with immense panache.",
-            "desc_long": "Savoir Faire urges you to be better than you are: it urges you to be disco. Slip by others in Samaran boxing style, then tumble out the back with unexpected acrobatics. It enables you to move silent footsteps, to groove to a good beat, and to lift useful evidence off perps without them noticing. It also makes you a cooler cop, whose athletic flair will certainly impress the citizenry.<br><br>At high levels, Savoir Faire will make you the King of Cool – which is as much to say, the most stylish douchebag in Revachol. Nobody will see you until you’re ready to be seen; and then, they’ll get the full treatment, whether they want it or not. At low levels, however, you’ll be a bumbling, feckless cop unable to catch pair of keys thrown by your partner without losing an eye. "
+            "desc_long": "Savoir Faire urges you to be better than you are: it urges you to be disco. Slip by others in Samaran boxing style, then tumble out the back with unexpected acrobatics. It enables you to move silent footsteps, to groove to a good beat, and to lift useful evidence off perps without them noticing. It also makes you a cooler cat, whose athletic flair will certainly impress the citizenry.<br><br>At high levels, Savoir Faire will make you the King of Cool – which is as much to say, the most stylish douchebag in Revachol. Nobody will see you until you’re ready to be seen; and then, they’ll get the full treatment, whether they want it or not. At low levels, however, you’ll be a bumbling, and feckless, unable to catch pair of keys thrown by your partner without losing an eye. "
         },
         "interfacing": {
             "name": "Interfacing",
@@ -200,7 +215,14 @@ skills = {
             "img": "composure.webp",
             "cool_for": "Card Players, Military Fetishists, Cool People.",
             "desc_short": "Straighten your back. Keep your poker face.",
-            "desc_long": "Composure wants you to not crack: or, at least, it wants you to not crack in front of other people. It enables you to put up a strong front. It keeps your emotions hidden from the world and helps you to read the body language of others – to sense the cracks in their own composure. As well, it keeps you looking good while you do it. You’ll rock that disco outfit a lot more if you don’t slouch.<br><br>At high levels, Composure makes you tuck your gut in and maintain a stern expression. Even lying in bed late night when no one else can see you, you’ll have to keep it up. You’ll never be able to stop. With low Composure, though, you’ll always be the first to crack. Every cop’s got a point when all that fear and rage comes spilling out – and the ones who unleash it doesn’t stay on the force much longer. Perhaps worse still, you won’t even make the ranks of the Fashion Police. "
+            "desc_long": "Composure wants you to not crack: or, at least, it wants you to not crack in front of other people. It enables you to put up a strong front. It keeps your emotions hidden from the world and helps you to read the body language of others – to sense the cracks in their own composure. As well, it keeps you looking good while you do it. You’ll rock that disco outfit a lot more if you don’t slouch.<br><br>At high levels, Composure makes you tuck your gut in and maintain a stern expression. Even lying in bed late night when no one else can see you, you’ll have to keep it up. You’ll never be able to stop. With low Composure, though, you’ll always be the first to crack. Everyone’s got a point when all that fear and rage comes spilling out – and the ones who unleash it don’t remain in good graces for very long. Perhaps worse still, you won’t even make the ranks of the Fashion Police. "
+        },
+        "kinetic_dressage": {
+            "name": "Kinetic Dressage",
+            "img": "kinetic_dressage.webp",
+            "cool_for": "Acrobats, Mountees, Waveriders.",
+            "desc_short": "Don't blink. Don't think. Just go.",
+            "desc_long": "Kinetic Dressage represents your unconscious physical aptitude, and it enables you to offload rote motions from your cerebrum onto your sympathetic nervous system. It's the intrinsic assurance that allows you to step with confidence, play a chord, and expertly wield chopsticks, without so much as a passing thought.<br><br>At high levels, you will be equipped with an abstracted subroutine for everything – and surprised when you're not. At low levels, however, you'll have trouble achieving any kind of flow state, and you'll be overwhelmed by the sheer number of mechanical processes your body needs to accomplish."
         }
     }
 }

@@ -1,39 +1,122 @@
 :root {
     --mouse-x: 0.5;
     --mouse-y: 0.5;
+    --content-scroll: 0;
+    --int-color: rgb(97, 193, 209);
+    --psy-color: rgb(115, 89, 199);
+    --fys-color: rgb(198, 74, 108);
+    --mot-color: rgb(225, 185, 63);
 }
-
+.int-color {
+    color: var(--int-color);
+}
+.psy-color {
+    color: var(--psy-color);
+}
+.fys-color {
+    color: var(--fys-color);
+}
+.mot-color {
+    color: var(--mot-color);
+}
+.modal {
+    display: block;
+    position: fixed;
+    left: calc(var(--mouse-x-raw) * 1px + 10px);
+    top: calc(var(--mouse-y-raw) * 1px + 20px);
+    background-color: black;
+    color: white;
+    opacity: 90%;
+    overflow: hidden;
+    z-index: 3;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
 body {
     margin: 0px;
+    overflow: hidden;
 }
-#main {
-    display: flex;
-    flex-flow: row nowrap;
-    height: calc(100vh - 60px);
-    background-image: url("./img/parallax/feld.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+#viewport {
+    
+    height: 100vh;
+    
     z-index: 1;
-    width: 80%;
+    width: calc(90vw - 60px);
     margin: auto;
-    padding: 30px;
-    gap: 30px;
-    justify-content: center;
     min-width: 1200px;
     min-height: 800px;
+    overflow: hidden;
 }
+#viewport::before {
+    content: "";
+    position: fixed;
+    top: 0px;
+    left: 5vw;
+    height: 200vh;
+    width: 90vw;
+    z-index: 0;
+    /* background-image: url("./img/parallax/feld.png"); */
+    border-image: url("./img/parallax/feld-border.png") 30 fill / 0px 30px 0px 30px repeat;
+    opacity: 70%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: translateY(calc(var(--content-scroll) * -100vh));
+    transition: transform 0.5s ease-out;
+}
+#content {
+    display: flex;
+    flex-flow: row nowrap;
+    width: calc(90vw + 20vw + 10px);
+    height: calc(100% - 30px);
+    justify-content: end;
+    transform: translateX(calc(var(--content-scroll) * -1 * (20vw + 70px)));
+    transition: transform 0.5s ease-out;
+    
+}
+#attributes {
+    height: 100vh;
+    width: 10vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+}
+.attribute {
+    width: 80%;
+}
+.attribute > p {
+    margin: 0px;
+    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+.attribute > p:first-child {
+    font-size: 5vw; 
+    font-weight: 800;
+    line-height: 1;
+}
+.attribute > p:last-child {
+    font-style: italic;
+    font-size: xx-large;
+    border-top: 2px solid white;
+}
+
 #skill-details {
-    padding: 20px;
-    flex-grow: 0.3;
+    padding: 20px 20px 0px 20px;
     transition: all 0.25s;
     background-color: rgba(0, 0, 0, 0.5);
     font-family: 'Arial Narrow Bold', sans-serif;
     color: white;
-    width: 30%;
+    width: 20vw;
     overflow-x: hidden;
     position: relative;
     top: 0px;
     left: 0px;
+    height: calc(100vh - 20px);
 }
 #skill-details > .nav-bar {
     position: absolute;
@@ -43,10 +126,15 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
     width: calc(100% - 40px);
-    height: 50px;
+    height: 0px;
     transition: all 0.25s;
+    overflow: hidden;
 }
-#skill-details.closed > .nav-bar {
+#skill-details:hover > .nav-bar {
+    height: 50px;
+    
+}
+/* #skill-details.closed > .nav-bar {
     height: 0px;
 }
 #skill-details.closed {
@@ -56,7 +144,7 @@ body {
 }
 #skill-details.closed > * {
     width: 400px;
-}
+} */
 #overview-toggle, #info-toggle {
     opacity: 0.6;
     font-size: xx-large;
@@ -79,7 +167,7 @@ body {
 }
 #skill-detail-image {
     width: 100%;
-    height: 500px;
+    height: 450px;
 }
 #skill-details .closer {
     width: 50px;
@@ -97,6 +185,7 @@ body {
 #skill-details .nav-bar > :hover {
     cursor: pointer;
 }
+
 #skill-details .nav-bar > :not(.active):hover {
     background-color: gray;
 }
@@ -122,10 +211,12 @@ body {
 #skills {
     display: flex;
     flex-flow: column nowrap;
-    height: 100%;
-    flex-grow: 0.6;
-    width: 70%;
-    justify-content: space-between;
+    height: calc(100vh - 60px);
+    width: calc((70vw - 130px) + ((1 - var(--content-scroll)) * 10vw));
+    transition: width 0.5s ease-out;
+    gap: 30px;
+    padding: 30px;
+    justify-content: space-around;
 }
 #skills > div {
     display: flex;
@@ -133,9 +224,10 @@ body {
     width: 100%;
     height: 20%;
     justify-content: center;
+    align-items: center;
 }
 .skill {
-    width: 150px;
+    width: 165px;
     height: 100%;
     transition: all 0.25s;
     position: relative;
@@ -144,40 +236,82 @@ body {
 }
 .skill:hover {
     cursor: pointer;
-    
+    width: 175px;
+    height: 105%;
+}
+.skill > .modal {
+    width: 275px;
+    max-width: 0px;
+    transition: max-width 0.5s ease-in-out, border-right 0.5s linear, transform 0.5s ease-in-out;
+    height: 45px;
+    max-height: 50px;
+    transform: translateX(calc((var(--content-scroll) * (20vw + 70px) - 125px)))
+    /* transform: translateX(calc((var(--content-scroll) * (20vw + 70px) - 125px))) */
+}
+.skill:hover > .modal {
+    max-width: 285px;
+    border-right: 2px solid white;
+    transform: translateX(calc((var(--content-scroll) * (20vw + 70px) - 125px) - ((1 - var(--content-scroll)) * 290px)))
+}
+.attribute > .modal {
+    width: 275px;
+    max-width: 0px;
+    transition: max-width 0.5s ease-in-out, border-right 0.5s linear;
+    height: 110px;
+    top: calc(var(--mouse-y-raw) * 1px);
+    transform: translateX(calc((var(--content-scroll) * (20vw + 70px) - 125px)));
+    text-align: left;
+}
+.attribute:hover > .modal {
+    max-width: 285px;
+    border-right: 2px solid white;
+    transform: translateX(calc((var(--content-scroll) * (20vw + 70px) - 125px)))
 }
 .skill > img {
     width: 100%;
     height: 100%;
     margin: 0;
 }
-.skill > p {
+.skill-label {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+.skill-label > p {
+    margin: 0;
+    font-size: 90%;
+    max-height: 40px;
+    z-index: 2;
+}
+.skill-label > :first-child {
     display: inline-block;
     width: 100%;
     height: fit-content;
-    max-height: 0px;
-    background-color: white;
-    position: absolute;
     text-overflow: ellipsis;
-    top: 0px;
-    left: 0px;
-    margin: 0;
+    color: white;
     opacity: 1;
     transition: all 0.25s;
     text-align: center;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-family: 'Arial Narrow Bold', sans-serif;
+    
+    
     font-style: italic;
     overflow: hidden;
     word-break: keep-all;
-    font-size: 90%;
+    
 }
-.skill:hover > p {
-    max-height: 40px;
-    font-size: small;
-    word-break: normal;
+.skill-label > :last-child {
+    color: black;
+    background-color: white;
+    font-weight: bold;
 }
 
 .parallax-container {
@@ -229,8 +363,8 @@ body {
 }
 
 #check-menu {
-    width: 80%;
-    left: 10%;
+    width: calc(90vw - 60px);
+    left: calc(5vw + 30px);
     height: 0vh;
     position: fixed;
     top: 0px;
@@ -276,7 +410,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     position: absolute;
-    top: 525px;
+    top: 475px;
     right: 0px;
     max-width: 40px;
 }
